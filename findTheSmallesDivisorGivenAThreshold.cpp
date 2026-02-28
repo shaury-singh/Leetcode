@@ -17,9 +17,7 @@ vector<int> minAndMax(vector<int> nums){
 int smallestDivisor(vector<int>& nums, int threshold) {
     vector<int> minMax = minAndMax(nums);
     int left = 1;
-    // cout << left << endl;
     int right = minMax[1];
-    // cout << right << endl;
     while (left <= right){
         int mid = (left + right)/2;
         int sum = 0;
