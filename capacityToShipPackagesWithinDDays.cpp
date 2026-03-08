@@ -19,17 +19,14 @@ int shipWithinDays(vector<int>& weights, int days) {
     int right = sumMax[1];
     while (left <= right){
         int mid = (left + right)/2;
-        // cout << "mid is: " << mid << endl;
         int d = 1;
         int load = 0;
         for (int weight : weights){
             if (load + weight > mid){
                 d++;
-                // cout << "load and weight is: " << load + weight << endl;
                 load = weight;
             } else {
                 load += weight;
-                // cout << "load is: " << load << endl;
             }
         }
         if (d <= days){
