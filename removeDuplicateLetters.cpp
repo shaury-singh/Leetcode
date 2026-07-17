@@ -44,7 +44,7 @@ string removeDuplicateLetters(string s) {
                     oppStack.pop();
                     cout << "Popped from oppStack" << endl;
                     charStack.push(OppC);
-                    cout << "Psuhed into charStack" << endl;
+                    cout << "Pushed into charStack" << endl;
                 }
             }
         }
